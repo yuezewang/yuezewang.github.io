@@ -1,12 +1,12 @@
 /* =====================================================
    Yueze Wang Homepage
-   Academic Research Homepage Style v2
+   Academic Research Homepage v3
    ===================================================== */
 
 
-/* --------------------
+/* ===============================
    Global
--------------------- */
+================================ */
 
 
 * {
@@ -25,7 +25,7 @@ body {
 
     background: #ffffff;
 
-    color: #222222;
+    color: #222;
 
     font-family:
         Inter,
@@ -38,7 +38,7 @@ body {
 
     font-size: 15px;
 
-    line-height: 1.65;
+    line-height: 1.55;
 
 }
 
@@ -46,34 +46,34 @@ body {
 
 .container {
 
-    max-width: 1000px;
+    max-width: 1050px;
 
     margin: 0 auto;
 
-    padding: 45px 30px 40px;
+    padding: 35px 35px 40px;
 
 }
 
 
 
-/* --------------------
+/* ===============================
    Typography
--------------------- */
+================================ */
 
 
 h1 {
 
-    margin: 18px 0 8px;
+    margin: 15px 0 6px;
 
-    font-size: 36px;
+    font-size: 32px;
 
     line-height: 1.2;
 
     font-weight: 700;
 
-    letter-spacing: -0.8px;
+    letter-spacing: -0.6px;
 
-    color: #111;
+    color:#111;
 
 }
 
@@ -81,19 +81,21 @@ h1 {
 
 h2 {
 
-    margin: 0 0 16px;
+    margin: 0 0 14px;
 
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
-    font-size: 22px;
+    font-size: 21px;
 
     line-height: 1.3;
 
-    font-weight: 650;
+    font-weight: 600;
 
-    color: #111;
+    color:#111;
 
-    border-bottom: 1px solid #eeeeee;
+    border-bottom:
+
+        1px solid #eeeeee;
 
 }
 
@@ -101,15 +103,15 @@ h2 {
 
 h3 {
 
-    margin: 0 0 6px;
+    margin:0 0 5px;
 
-    font-size: 16px;
+    font-size:16px;
 
-    line-height: 1.45;
+    line-height:1.4;
 
-    font-weight: 600;
+    font-weight:600;
 
-    color: #222;
+    color:#222;
 
 }
 
@@ -117,7 +119,7 @@ h3 {
 
 p {
 
-    margin: 0 0 14px;
+    margin:0 0 10px;
 
 }
 
@@ -125,24 +127,24 @@ p {
 
 strong {
 
-    font-weight: 650;
+    font-weight:650;
 
 }
 
 
 
-/* --------------------
+/* ===============================
    Links
--------------------- */
+================================ */
 
 
 a {
 
-    color: #2563eb;
+    color:#2563eb;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    transition: color .2s ease;
+    transition:.2s ease;
 
 }
 
@@ -150,24 +152,24 @@ a {
 
 a:hover {
 
-    color: #1d4ed8;
+    color:#1d4ed8;
 
-    text-decoration: underline;
+    text-decoration:underline;
 
 }
 
 
 
-/* =====================================================
+/* ===============================
    Hero
-===================================================== */
+================================ */
 
 
 .hero {
 
-    text-align: center;
+    text-align:center;
 
-    margin-bottom: 40px;
+    margin-bottom:28px;
 
 }
 
@@ -175,17 +177,17 @@ a:hover {
 
 .avatar {
 
-    width: 150px;
+    width:130px;
 
-    height: 150px;
+    height:130px;
 
-    object-fit: cover;
+    object-fit:cover;
 
-    border-radius: 50%;
+    border-radius:50%;
 
     box-shadow:
 
-        0 4px 15px rgba(0,0,0,0.08);
+        0 3px 12px rgba(0,0,0,0.10);
 
 }
 
@@ -193,11 +195,11 @@ a:hover {
 
 .position {
 
-    margin-bottom: 8px;
+    margin-bottom:5px;
 
-    color: #555;
+    font-size:15px;
 
-    font-size: 16px;
+    color:#555;
 
 }
 
@@ -205,11 +207,11 @@ a:hover {
 
 .tagline {
 
-    margin-bottom: 15px;
+    margin-bottom:12px;
 
-    color: #666;
+    font-size:15px;
 
-    font-size: 15px;
+    color:#666;
 
 }
 
@@ -223,9 +225,9 @@ a:hover {
 
     align-items:center;
 
-    gap:10px;
+    gap:9px;
 
-    font-size:15px;
+    font-size:14px;
 
 }
 
@@ -239,22 +241,26 @@ a:hover {
 
 
 
-/* =====================================================
+
+
+/* ===============================
    Sections
-===================================================== */
+================================ */
 
 
 .card {
 
-    background: transparent;
+    background:transparent;
 
-    padding: 22px 0;
+    padding:18px 0;
 
-    margin-bottom: 5px;
+    margin:0;
 
     border-radius:0;
 
-    border-bottom:1px solid #eeeeee;
+    border-bottom:
+
+        1px solid #ededed;
 
 }
 
@@ -270,9 +276,9 @@ a:hover {
 
 
 
-/* =====================================================
-   Research Tags
-===================================================== */
+/* ===============================
+   Tags
+================================ */
 
 
 .tags {
@@ -281,7 +287,7 @@ a:hover {
 
     flex-wrap:wrap;
 
-    gap:8px;
+    gap:7px;
 
 }
 
@@ -289,19 +295,38 @@ a:hover {
 
 .tags span {
 
-    display:inline-block;
+    display:inline-flex;
 
-    padding:4px 12px;
+    align-items:center;
 
-    border-radius:999px;
+    padding:
 
-    background:#f3f4f6;
+        3px 10px;
 
-    color:#374151;
 
-    font-size:13px;
+    border-radius:
 
-    line-height:1.5;
+        999px;
+
+
+    background:#fafafa;
+
+    border:
+
+        1px solid #e8e8e8;
+
+
+    color:#475569;
+
+    font-size:
+
+        12.5px;
+
+
+    line-height:
+
+        1.5;
+
 
     transition:.2s ease;
 
@@ -311,20 +336,20 @@ a:hover {
 
 .tags span:hover {
 
-    background:#e5e7eb;
+    background:#f1f5f9;
 
 }
 
 
 
-/* =====================================================
+/* ===============================
    Publications
-===================================================== */
+================================ */
 
 
 .publication {
 
-    padding:5px 0;
+    padding:3px 0;
 
 }
 
@@ -338,18 +363,18 @@ a:hover {
 
 
 
-/* =====================================================
-   Competition Timeline
-===================================================== */
+/* ===============================
+   Timeline
+================================ */
 
 
 .timeline {
 
     position:relative;
 
-    margin-left:8px;
+    margin-left:6px;
 
-    padding-left:25px;
+    padding-left:22px;
 
 }
 
@@ -369,7 +394,7 @@ a:hover {
 
     width:1px;
 
-    background:#d1d5db;
+    background:#dddddd;
 
 }
 
@@ -379,7 +404,7 @@ a:hover {
 
     position:relative;
 
-    margin-bottom:25px;
+    margin-bottom:22px;
 
 }
 
@@ -387,23 +412,34 @@ a:hover {
 
 .timeline-item::before {
 
+
     content:"";
+
 
     position:absolute;
 
-    left:-30px;
 
-    top:8px;
+    left:-27px;
 
-    width:9px;
 
-    height:9px;
+    top:7px;
+
+
+    width:8px;
+
+
+    height:8px;
+
 
     border-radius:50%;
 
+
     background:#ffffff;
 
-    border:2px solid #2563eb;
+
+    border:
+
+        2px solid #2563eb;
 
 }
 
@@ -411,7 +447,7 @@ a:hover {
 
 .timeline-item p {
 
-    margin-bottom:8px;
+    margin-bottom:7px;
 
 }
 
@@ -427,16 +463,16 @@ a:hover {
 
 
 
-/* =====================================================
+/* ===============================
    Footer
-===================================================== */
+================================ */
 
 
 footer {
 
-    margin-top:35px;
-
     text-align:center;
+
+    margin-top:25px;
 
     color:#888;
 
@@ -448,15 +484,15 @@ footer {
 
 footer p {
 
-    margin-bottom:4px;
+    margin-bottom:3px;
 
 }
 
 
 
-/* =====================================================
+/* ===============================
    Responsive
-===================================================== */
+================================ */
 
 
 @media(max-width:700px){
@@ -464,7 +500,9 @@ footer p {
 
     .container {
 
-        padding:30px 20px;
+        padding:
+
+        25px 20px;
 
     }
 
@@ -472,7 +510,7 @@ footer p {
 
     h1 {
 
-        font-size:30px;
+        font-size:28px;
 
     }
 
@@ -480,9 +518,9 @@ footer p {
 
     .avatar {
 
-        width:120px;
+        width:110px;
 
-        height:120px;
+        height:110px;
 
     }
 
@@ -490,18 +528,9 @@ footer p {
 
     .card {
 
-        padding:18px 0;
+        padding:15px 0;
 
     }
-
-
-
-    .social-links {
-
-        flex-wrap:wrap;
-
-    }
-
 
 
 }
@@ -509,9 +538,9 @@ footer p {
 
 
 
-/* =====================================================
+/* ===============================
    Dark Mode
-===================================================== */
+================================ */
 
 
 @media(prefers-color-scheme:dark){
@@ -573,6 +602,8 @@ h2 {
 
     background:#1f2937;
 
+    border-color:#374151;
+
     color:#d1d5db;
 
 }
@@ -593,6 +624,13 @@ h2 {
 
 }
 
+
+
+footer {
+
+    color:#94a3b8;
+
+}
 
 
 }
