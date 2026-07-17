@@ -1,10 +1,12 @@
 /* =====================================================
    Yueze Wang Homepage
-   Modern Academic Homepage Style
+   Academic Research Homepage Style v2
    ===================================================== */
 
 
-/* ---------- Global ---------- */
+/* --------------------
+   Global
+-------------------- */
 
 
 * {
@@ -21,9 +23,9 @@ body {
 
     margin: 0;
 
-    background: #fafafa;
+    background: #ffffff;
 
-    color: #222;
+    color: #222222;
 
     font-family:
         Inter,
@@ -37,6 +39,7 @@ body {
     font-size: 15px;
 
     line-height: 1.65;
+
 }
 
 
@@ -44,46 +47,31 @@ body {
 .container {
 
     max-width: 1000px;
-   
+
     margin: 0 auto;
 
-    padding: 60px 30px 50px;
+    padding: 45px 30px 40px;
 
 }
 
 
 
-/* ---------- Typography ---------- */
+/* --------------------
+   Typography
+-------------------- */
 
 
 h1 {
 
-    margin: 25px 0 10px;
+    margin: 18px 0 8px;
 
-    font-size: 44px;
-
-    font-weight: 700;
-
-    letter-spacing: -1px;
+    font-size: 36px;
 
     line-height: 1.2;
 
-}
+    font-weight: 700;
 
-
-
-h2 {
-
-   
-    margin-top: 0;
-
-    font-size:22px;
-   
-    margin-bottom:18px;
-
-    font-weight: 650;
-
-    letter-spacing: -0.4px;
+    letter-spacing: -0.8px;
 
     color: #111;
 
@@ -91,17 +79,37 @@ h2 {
 
 
 
+h2 {
+
+    margin: 0 0 16px;
+
+    padding-bottom: 10px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 650;
+
+    color: #111;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+
 h3 {
 
-    margin-top: 0;
+    margin: 0 0 6px;
 
-    margin-bottom: 8px;
-
-    font-size: 19px;
+    font-size: 16px;
 
     line-height: 1.45;
 
     font-weight: 600;
+
+    color: #222;
 
 }
 
@@ -109,7 +117,7 @@ h3 {
 
 p {
 
-   margin:0 0 14px;
+    margin: 0 0 14px;
 
 }
 
@@ -123,7 +131,9 @@ strong {
 
 
 
-/* ---------- Links ---------- */
+/* --------------------
+   Links
+-------------------- */
 
 
 a {
@@ -132,7 +142,7 @@ a {
 
     text-decoration: none;
 
-    transition: all .2s ease;
+    transition: color .2s ease;
 
 }
 
@@ -149,15 +159,15 @@ a:hover {
 
 
 /* =====================================================
-   Hero Section
-   ===================================================== */
+   Hero
+===================================================== */
 
 
 .hero {
 
     text-align: center;
 
-    margin-bottom:35px;
+    margin-bottom: 40px;
 
 }
 
@@ -165,16 +175,17 @@ a:hover {
 
 .avatar {
 
-    width:150px;
+    width: 150px;
 
-    height:150px;
+    height: 150px;
 
     object-fit: cover;
 
     border-radius: 50%;
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,0.08);
+
+        0 4px 15px rgba(0,0,0,0.08);
 
 }
 
@@ -182,38 +193,9 @@ a:hover {
 
 .position {
 
+    margin-bottom: 8px;
+
     color: #555;
-
-    font-size: 18px;
-
-    margin-bottom: 10px;
-
-}
-
-
-
-.tagline {
-
-    font-size:15px;
-      
-    color:#666;
-
-    margin-bottom: 25px;
-
-   
-}
-
-
-
-.social-links {
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 12px;
 
     font-size: 16px;
 
@@ -221,40 +203,58 @@ a:hover {
 
 
 
+.tagline {
+
+    margin-bottom: 15px;
+
+    color: #666;
+
+    font-size: 15px;
+
+}
+
+
+
+.social-links {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+}
+
+
+
 .social-links span {
 
-    color: #aaa;
+    color:#aaa;
 
 }
 
 
 
 /* =====================================================
-   Cards
-   ===================================================== */
+   Sections
+===================================================== */
 
 
 .card {
 
-   background:white;
-   
-   padding:25px 0;
-   
-   border-bottom:1px solid #eee;
-   
-   box-shadow:none;
+    background: transparent;
 
+    padding: 22px 0;
 
-    box-shadow:
+    margin-bottom: 5px;
 
-        0 5px 25px rgba(0,0,0,0.045);
+    border-radius:0;
 
-
-    transition:
-
-        transform .25s ease,
-
-        box-shadow .25s ease;
+    border-bottom:1px solid #eeeeee;
 
 }
 
@@ -262,12 +262,9 @@ a:hover {
 
 .card:hover {
 
-    transform: translateY(-3px);
+    transform:none;
 
-
-    box-shadow:
-
-        0 10px 35px rgba(0,0,0,0.08);
+    box-shadow:none;
 
 }
 
@@ -275,16 +272,16 @@ a:hover {
 
 /* =====================================================
    Research Tags
-   ===================================================== */
+===================================================== */
 
 
 .tags {
 
-    display: flex;
+    display:flex;
 
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 
-    gap: 12px;
+    gap:8px;
 
 }
 
@@ -292,19 +289,21 @@ a:hover {
 
 .tags span {
 
-    background: #f1f5f9;
+    display:inline-block;
 
-    color: #334155;
+    padding:4px 12px;
 
-    padding:5px 12px;
-      
+    border-radius:999px;
+
+    background:#f3f4f6;
+
+    color:#374151;
+
     font-size:13px;
 
-    border-radius: 999px;
+    line-height:1.5;
 
-    line-height: 1.4;
-
-    transition: all .2s ease;
+    transition:.2s ease;
 
 }
 
@@ -312,9 +311,7 @@ a:hover {
 
 .tags span:hover {
 
-    background: #e0e7ff;
-
-    transform: translateY(-2px);
+    background:#e5e7eb;
 
 }
 
@@ -322,12 +319,12 @@ a:hover {
 
 /* =====================================================
    Publications
-   ===================================================== */
+===================================================== */
 
 
 .publication {
 
-    padding: 10px 0;
+    padding:5px 0;
 
 }
 
@@ -335,9 +332,7 @@ a:hover {
 
 .empty-note {
 
-    color: #777;
-
-    font-style: italic;
+    color:#777;
 
 }
 
@@ -345,16 +340,16 @@ a:hover {
 
 /* =====================================================
    Competition Timeline
-   ===================================================== */
+===================================================== */
 
 
 .timeline {
 
-    position: relative;
+    position:relative;
 
-    margin-left: 10px;
+    margin-left:8px;
 
-    padding-left: 30px;
+    padding-left:25px;
 
 }
 
@@ -362,19 +357,19 @@ a:hover {
 
 .timeline::before {
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    left: 0;
+    left:0;
 
-    top: 8px;
+    top:8px;
 
-    bottom: 8px;
+    bottom:8px;
 
-    width: 2px;
+    width:1px;
 
-    background: #e5e7eb;
+    background:#d1d5db;
 
 }
 
@@ -382,33 +377,33 @@ a:hover {
 
 .timeline-item {
 
-    position: relative;
+    position:relative;
 
+    margin-bottom:25px;
 
-    margin-bottom:24px;
 }
 
 
 
 .timeline-item::before {
 
-    content: "";
+    content:"";
 
-    position: absolute;
+    position:absolute;
 
-    left: -36px;
+    left:-30px;
 
-    top: 10px;
+    top:8px;
 
-    width: 12px;
+    width:9px;
 
-    height: 12px;
+    height:9px;
 
-    background: white;
+    border-radius:50%;
 
-    border-radius: 50%;
+    background:#ffffff;
 
-    border: 3px solid #2563eb;
+    border:2px solid #2563eb;
 
 }
 
@@ -416,7 +411,7 @@ a:hover {
 
 .timeline-item p {
 
-    margin-bottom: 10px;
+    margin-bottom:8px;
 
 }
 
@@ -424,9 +419,9 @@ a:hover {
 
 .achievement {
 
-    color: #2563eb;
+    color:#2563eb;
 
-    font-weight: 600;
+    font-weight:600;
 
 }
 
@@ -434,27 +429,26 @@ a:hover {
 
 /* =====================================================
    Footer
-   ===================================================== */
+===================================================== */
 
 
 footer {
 
-    text-align: center;
+    margin-top:35px;
 
-    margin-top: 50px;
+    text-align:center;
 
-    padding-top: 30px;
+    color:#888;
 
-    color: #888;
-
-    font-size: 14px;
+    font-size:13px;
 
 }
 
 
+
 footer p {
 
-    margin-bottom: 5px;
+    margin-bottom:4px;
 
 }
 
@@ -462,7 +456,7 @@ footer p {
 
 /* =====================================================
    Responsive
-   ===================================================== */
+===================================================== */
 
 
 @media(max-width:700px){
@@ -470,9 +464,7 @@ footer p {
 
     .container {
 
-        padding:
-
-        40px 20px;
+        padding:30px 20px;
 
     }
 
@@ -480,7 +472,7 @@ footer p {
 
     h1 {
 
-      font-size:36px;
+        font-size:30px;
 
     }
 
@@ -488,9 +480,9 @@ footer p {
 
     .avatar {
 
-        width:160px;
+        width:120px;
 
-        height:160px;
+        height:120px;
 
     }
 
@@ -498,11 +490,7 @@ footer p {
 
     .card {
 
-        padding:
-
-        25px 22px;
-
-        border-radius:14px;
+        padding:18px 0;
 
     }
 
@@ -516,24 +504,17 @@ footer p {
 
 
 
-    .timeline {
-
-        padding-left:25px;
-
-    }
-
-
 }
 
 
 
 
 /* =====================================================
-   Dark Mode Support
-   ===================================================== */
+   Dark Mode
+===================================================== */
 
 
-@media(prefers-color-scheme: dark){
+@media(prefers-color-scheme:dark){
 
 
 body {
@@ -541,18 +522,6 @@ body {
     background:#111827;
 
     color:#e5e7eb;
-
-}
-
-
-
-.card {
-
-    background:#1f2937;
-
-    box-shadow:
-
-    0 8px 30px rgba(0,0,0,.25);
 
 }
 
@@ -568,8 +537,15 @@ h3 {
 
 
 
-.position,
-.tagline {
+h2 {
+
+    border-color:#374151;
+
+}
+
+
+
+.position {
 
     color:#cbd5e1;
 
@@ -577,11 +553,27 @@ h3 {
 
 
 
+.tagline {
+
+    color:#94a3b8;
+
+}
+
+
+
+.card {
+
+    border-color:#374151;
+
+}
+
+
+
 .tags span {
 
-    background:#334155;
+    background:#1f2937;
 
-    color:#e2e8f0;
+    color:#d1d5db;
 
 }
 
@@ -597,15 +589,7 @@ h3 {
 
 .timeline-item::before {
 
-    background:#1f2937;
-
-}
-
-
-
-footer {
-
-    color:#94a3b8;
+    background:#111827;
 
 }
 
