@@ -452,6 +452,22 @@ a:hover {
 }
 
 
+.timeline-item h3 a {
+
+    color: #222;
+
+    text-decoration: none;
+
+}
+
+
+.timeline-item h3 a:hover {
+
+    color: #2563eb;
+
+}
+
+
 
 .achievement {
 
